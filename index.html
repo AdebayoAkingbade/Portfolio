@@ -8,17 +8,32 @@
     <link rel="icon" type="image/png" sizes="32x32" href="assets/favicons/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="assets/favicons/favicon-16x16.png">
     <link rel="manifest" href="assets/favicons/site.webmanifest">
-    <!-- <link rel="mask-icon" href="assets/favicons/safari-pinned-tab.svg" color="#5bbad5"> -->
     <link rel="shortcut icon" href="assets/favicons/favicon.ico">
     <meta name="msapplication-TileColor" content="#da532c">
     <meta name="msapplication-config" content="assets/favicons/browserconfig.xml">
     <meta name="theme-color" content="#a789d4">
     <link rel="stylesheet" href="style/style.css">
     <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
-    <link rel="stylesheet" href="style/swiper-bundle.min.css">
     <title>Adebayo's portfolio</title>
+    <script>
+        function hideLoading() {
+            setTimeout(function() {
+            document.getElementById('loading').style.opacity = '0';
+            document.getElementById('loading').style.zIndex = '-2';
+            }, 1000);
+        }
+    </script>
 </head>
-<body>
+<body onload="hideLoading();">
+    <div id="loading">
+        <div class="spinner-box">
+          <div class="pulse-container">
+            <div class="pulse-bubble pulse-bubble-1"></div>
+            <div class="pulse-bubble pulse-bubble-2"></div>
+            <div class="pulse-bubble pulse-bubble-3"></div>
+          </div>
+        </div>
+    </div>
     <header class="header_wrapper" id="header_wrapper">
         <nav class="nav wrapper">
             <a href="#" class="nav_logo">Adebayo</a>
@@ -55,9 +70,8 @@
         <section class="home section" id="home">
             <div class="home_wrapper wrapper grid">
                 <div class="home_data">
-                    <span class="greeting">My name is</span>
-                    <h1 class="my_name">Adebayo Akingbade</h1>
-                    <h3 class="education">Software Developer</h3>
+                    <span class="greeting">Hi Its me</span>
+                    <h1 class="my_name"></h1>
 
                     <div class="home_button">
                         <a download="" href="pdf/adebayo.pdf" class="button button_ghost">
@@ -352,11 +366,9 @@
         </div>
     </footer>
 
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+
     <script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
-
-    <script src="js/swiper-bundle.min.js"></script>
-
-    <script src="js/mixitup.min.js"></script>
 
     <script src="js/index.js"></script>
 </body>

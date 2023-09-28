@@ -90,7 +90,7 @@ anime.reveal(`.home_img_wrapper`, {
   delay: 100,
 });
 
-anime.reveal(`.social_handle, .scroll_down`, {
+anime.reveal(`.social_handles, .scroll_down`, {
   delay: 100,
   origin: "bottom",
 });
@@ -115,20 +115,29 @@ anime.reveal(`.skills_content`, {
 });
 
 anime.reveal(`.contact_info, .contact_title-info`, {
-    scale: 0.9,
-    origin: "left",
-    distance: "30px",
-})
+  scale: 0.9,
+  origin: "left",
+  distance: "30px",
+});
 
 anime.reveal(`contact_form, .contact_form`, {
-    scale: 0.9,
-    origin: "right",
-    distance: "30px",
-})
+  scale: 0.9,
+  origin: "right",
+  distance: "30px",
+});
 
 anime.reveal(`.footer, footer_wrapper`, {
-    delay: 100,
-    scale: 0.9,
-    origin: "bottom",
-    distance: "30px",
-  });
+  delay: 100,
+  scale: 0.9,
+  origin: "bottom",
+  distance: "30px",
+});
+
+var typed = new Typed(".my_name", {
+  strings: ["Adebayo Akingbade", "Software Developer"],
+  typeSpeed: 100,
+  backSpeed: 100,
+  backDelay: 1000,
+  showCursor: false,
+  loop: true,
+});
