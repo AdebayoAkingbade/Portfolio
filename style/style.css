@@ -3,11 +3,11 @@
 :root {
   --header-height: 3.5rem;
   --first-hue: 250;
-  --sat: 66%;
+  --sat: 26%;
   --lig: 75%;
   --second-hue: 219;
   --first-color: hsl(var(--first-hue), var(--sat), var(--lig));
-  --first-color-alt: hsl(var(--first-hue), var(--sat), 71%); /* -4% */
+  --first-color-alt: hsl(var(--first-hue), var(--sat), 71%);
   --title-color: hsl(var(--second-hue), 15%, 95%);
   --text-color: hsl(var(--second-hue), 8%, 75%);
   --text-color-light: hsl(var(--second-hue), 4%, 55%);
@@ -15,7 +15,7 @@
   --wrapper-color: hsl(var(--second-hue), 32%, 12%);
 
 
-  --body-font: "Poppins", sans-serif;
+  --body-font: sans-serif;
   --biggest-font-size: 1.75rem;
   --h1-font-size: 1.5rem;
   --h2-font-size: 1.25rem;
@@ -34,6 +34,14 @@
   --z-fixed: 100;
   --z-modal: 1000;
 }
+
+.swiper-pagination-bullet {
+    background-color: var(--text-color-light);
+  }
+  
+  .swiper-pagination-bullet-active {
+    background-color: var(--first-color);
+  }
 
 @media screen and (min-width: 968px) {
   :root {
@@ -287,11 +295,14 @@ body.light-theme {
 .education {
   color: var(--text-color);
   margin-bottom: 2.5rem;
+  font-style: oblique;
 }
 
 .my_name {
   font-size: var(--biggest-font-size);
   color: var(--first-color);
+  height: var(--header-height);
+  margin-bottom: revert;
 }
 
 .home_img_wrapper {
@@ -361,7 +372,7 @@ body.light-theme {
   
   .scroll_down {
     color: var(--first-color);
-    right: -1.5rem;
+    right: -0.85rem;
     bottom: 4rem;
     display: grid;
     row-gap: 2.25rem;
@@ -668,7 +679,7 @@ body.light-theme {
 
   /*=============== SCROLL BAR ===============*/
 ::-webkit-scrollbar {
-    width: 0.5rem;
+    width: 0.35rem;
     border-radius: 0.5rem;
     background-color: var(--wrapper-color);
   }
@@ -763,7 +774,7 @@ body.light-theme {
   
     .home_img_wrapper {
       width: 290px;
-      height: 400px;
+      height: 353px;
     }
   
     .home_image {
@@ -779,7 +790,7 @@ body.light-theme {
     }
   
     .scroll_to_contact{
-      font-size: 2rem;
+      font-size: 1.5rem;
     }
   
     .about_wrapper {
