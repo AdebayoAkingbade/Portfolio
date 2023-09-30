@@ -32,14 +32,6 @@
   --z-modal: 1000;
 }
 
-.swiper-pagination-bullet {
-  background-color: var(--text-color-light);
-}
-
-.swiper-pagination-bullet-active {
-  background-color: var(--first-color);
-}
-
 @media screen and (min-width: 968px) {
   :root {
     --biggest-font-size: 2.5rem;
@@ -75,7 +67,7 @@ textarea {
 body {
   background-color: var(--body-color);
   color: var(--text-color);
-  transition: 0.4s; /* for light mode animation */
+  transition: 0.5s; /* for light mode animation */
 }
 h1,
 h2,
