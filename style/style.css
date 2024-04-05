@@ -216,6 +216,11 @@ body.light-theme {
   align-items: center;
 }
 
+.link_style{
+  text-decoration: none;
+  color: #fff;
+}
+
 .change_theme {
   font-size: 1.25rem;
   cursor: pointer;
